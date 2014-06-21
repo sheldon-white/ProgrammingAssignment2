@@ -18,7 +18,7 @@ im2
 # this will return TRUE
 identical(inv1, inv2)
 
-# we can have multiple caches at the same time
+# we can have multiple independent caches at the same time, since they use different environments
 c2 = matrix(2:5, nrow = 2, ncol=2)
 mm2 = makeCacheMatrix()
 mm2$set(c2)
