@@ -7,11 +7,13 @@ mm1$set(c1)
 # first run calculates the inverse
 inv1 = cacheSolve(mm1, verbose=TRUE)
 im1 = c1 %*% inv1
+# should be the identity matrix
 im1
 
 # second run uses the cache
 inv2 = cacheSolve(mm1, verbose=TRUE)
 im2 = c1 %*% inv2
+# should be the identity matrix
 im2
 
 # ...and we got back the same matrix each time
